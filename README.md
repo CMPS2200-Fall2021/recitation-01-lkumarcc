@@ -43,8 +43,11 @@ We'll compare the running times of `linear_search` and `binary_search` empirical
 - [ ] 4. Describe the worst case input value of `key` for `linear_search`? for `binary_search`? 
 
 **TODO: your answer goes here**
+The worst case input value for key would be an item that isn't in the list. For linear search, the program would iterate through the entire list looking for the number, and then not find it. For binary search, the program would continue halving the list until it got down to one number, and then if that number wasn't the key it would stop.
 
 - [ ] 5. Describe the best case input value of `key` for `linear_search`? for `binary_search`? 
+
+For linear search the best case input value of the key would be the first number in the list because that's the first number the program checks. However for binary search it depends on whether the number of items in the list is even or odd. For a list with even numbers, the best case input value of key would be the value that corresponds to the middle most item. Because an odd numbered list does not have a middle most index, the best case input value of key would be the closest rounded down integer of the average of the first and last index.
 
 **TODO: your answer goes here**
 
