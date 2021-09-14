@@ -3,7 +3,7 @@ CMPS 2200  Recitation 1
 """
 
 ### the only imports needed are here
-###import tabulate
+import tabulate
 import time
 ###
 
@@ -138,4 +138,4 @@ def test_compare_search():
 
 
 print(test_binary_search())
-test_compare_search()
+print_results(compare_search())
