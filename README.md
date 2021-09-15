@@ -61,9 +61,10 @@ For linear search the best case input value of the key would be the first number
 
 - [ ] 9. The theoretical worst-case running time of linear search is $O(n)$ and binary search is $O(log_2(n))$. Do these theoretical running times match your empirical results? Why or why not?
 
-**TODO: your answer goes here**
+These theoretical running times do match my empirical results. Because the key we used is -1 which is not in the list we used, the runtime values will be for worst case.
 
 - [ ] 10. Binary search assumes the input list is already sorted. Assume it takes $\Theta(n^2)$ time to sort a list of length $n$. Suppose you know ahead of time that you will search the same list $k$ times. 
-  + What is worst-case complexity of searching a list of $n$ elements $k$ times using linear search? **TODO: your answer goes here**
-  + For binary search? **TODO: your answer goes here**
+  + What is worst-case complexity of searching a list of $n$ elements $k$ times using linear search? k(O(n))
+  + For binary search? k(O(log_2(n)))
   + For what values of $k$ is it more efficient to first sort and then use binary search versus just using linear search without sorting? **TODO: your answer goes here**
+The values for k where theta(n^2) + k(O(log_2(n))) < k(O(n)). So where theta(n^2)/((O(log_2(n))-O(n)) > k.
